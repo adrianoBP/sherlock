@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Sherlock</title>
+  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
+  <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900&subset=latin,latin-ext'>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="./resources/icon.png">
+</head>
+
+<body>
+
+  <div class="materialContainer">
+
+    <div class="box">
+
+      <div class="title">LOGIN</div>
+
+      <div class="input">
+        <label for="name">Username or email</label>
+        <input type="text" name="name" id="name" onkeypress="waitForEnter(event);">
+        <span class="spin"></span>
+      </div>
+
+      <div class="input">
+        <label for="pass">Password</label>
+        <input type="password" name="pass" id="pass" onkeypress="waitForEnter(event);">
+        <span class="spin"></span>
+      </div>
+
+      <div class="button login">
+        <button onclick="login();"><span id="login">GO</span></button>
+      </div>
+
+    </div>
+
+    <div class="overbox">
+      <div class="material-button alt-2"><span class="shape"></span></div>
+      <div class="title">Register from the APP!
+        <a href="./resources/sherlock.apk">
+          <img src='resources/qr.png' alt='qr code'>
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+
+
+  <script  src="js/index.js"></script>
+
+
+  <div id="snackbar"></div>
+
+</body>
+
+</html>

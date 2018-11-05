@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="background">#e1e1e1</color> &lt;!&ndash; &ndash;&gt;-->
+    <color name="background">#fcf2e4</color> <!-- -->
+    <!--<color name="background">#ffefc8</color> &lt;!&ndash; &ndash;&gt;-->
+    <color name="background_dead">#979188</color>
+    <color name="primary">#25a59a</color> <!-- Black text -->
+    <color name="primary_light">#63d7cb</color> <!-- Black text -->
+    <color name="primary_dark">#00756c</color> <!-- White text -->
+    <color name="secondary">#f57c00</color> <!-- Black text -->
+    <color name="secondary_light">#ffad42</color> <!-- Black text -->
+    <color name="secondary_dark">#bb4d00</color> <!-- White text -->
+    <color name="fontBright">#ffffff</color> <!-- -->
+    <color name="fontDark">#313131</color>
+    <color name="material_red">#f44336</color>
+    <color name="material_dark_red">#801313</color>
+    <color name="material_green">#8bc34a</color>
+    <color name="material_dark_green">#2e7d32</color>
+    <color name="test">#e0d4bb</color>
+
+</resources>

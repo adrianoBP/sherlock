@@ -1,0 +1,34 @@
+<menu  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <item
+        android:id="@+id/sort_departure_asc"
+        android:icon="@drawable/ic_sort_departure_asc"
+        android:title="departure ASC"
+        />
+    <item
+        android:id="@+id/sort_departure_desc"
+        android:icon="@drawable/ic_sort_departure_desc"
+        android:title="departure DESC"
+        />
+    <item
+        android:id="@+id/sort_arrival_asc"
+        android:icon="@drawable/ic_sort_arrival_asc"
+        android:title="arrival ASC"
+        />
+    <item
+        android:id="@+id/sort_arrival_desc"
+        android:icon="@drawable/ic_sort_arrival_desc"
+        android:title="arrival DESC"
+        />
+    <item
+        android:id="@+id/sort_duration_asc"
+        android:icon="@drawable/ic_sort_duration_asc"
+        android:title="duration ASC"
+        />
+    <item
+        android:id="@+id/sort_duration_desc"
+        android:icon="@drawable/ic_sort_duration_desc"
+        android:title="duration DESC"
+        />
+</menu>

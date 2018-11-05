@@ -1,0 +1,22 @@
+<resources>
+    <string name="serverURL">https://projectsherlock.ddns.net/sherlock/v1</string>
+    <string name="websiteURL">https://projectsherlock.ddns.net</string>
+
+    <string name="app_name">Sherlock</string>
+    <string name="tab_trips">TRIPS</string>
+    <string name="tab_home">HOME</string>
+    <string name="tab_profile">UTILITY</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <string name="FCM_PREF">prjs.adriano.com.fcmwithappserver.fcm_pref</string>
+    <string name="FCM_TOKEN">prjs.adriano.com.fcmwithappserver.fcm_token</string>
+
+    <string name="API_ryanair">lKCvBnr8fGqLkcdMkca4t4GMbGILfiZU</string>
+    <string name="API_google_directions">AIzaSyDK2-NT36joI2jtg7s8bjT3aBKaxc5lGv0</string>
+    <string name="API_google_geocoding">AIzaSyCv493cUMOVp5Sbbll7jslHuxabax6418c</string>
+    <string name="API_flickr">d4762411ed3c351579fd163793753572</string>
+    <string name="title_activity_maps">Map</string>
+
+
+</resources>

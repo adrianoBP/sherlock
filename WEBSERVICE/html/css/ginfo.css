@@ -1,0 +1,126 @@
+@font-face {
+  font-family: title;
+  src: url(../resources/fonts/gothic.woff);
+}
+body, html{
+  background-color: #80cbc4;
+  -ms-overflow-style: none;  // IE 10+
+  overflow: -moz-scrollbars-none;  // Firefox
+  font-family: title;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+h2{
+  font-family: title;
+  font-weight: 400;
+}
+div{
+  background-color: white;
+  font-family: title;
+}
+
+.header {
+  padding: 0px 16px;
+  background: #00756c ;
+  grid-template-columns: 12% 76% 11%;
+  color: #f1f1f1;
+  display: grid;
+  align-items: center;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 50px;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  background-color: #80cbc4;
+  color: #444;
+}
+
+
+.ripple {
+  background-position: center;
+  margin: 0px 15px 0px 15px;
+  border-radius: 50px;
+  font-family: title;
+  font-weight: bold;
+  transition: .3s; /* Animation */
+  -o-transition:.3s;
+  -ms-transition:.3s;
+  -moz-transition:.3s;
+  -webkit-transition:.3s;
+}
+.ripple:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.ripple:active {
+  background-color: #ffad42;
+  background-size: 100%;
+  transition: background 0s;
+}
+div button {
+  border: none;
+  border-radius: 2px;
+  padding: 6px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 400;
+  cursor: pointer;
+  background-color: #f57c00;
+  outline: none;
+}
+
+/*SNACKBAR*/
+#snackbar {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 30px;
+  font-size: 17px;
+}
+
+#snackbar.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+/**/

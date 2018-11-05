@@ -1,0 +1,346 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+html, body{
+  max-width: 100%;
+  background: #25a59a ;
+
+}
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #25a59a;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #00756c;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #004d40;
+}
+
+@font-face {
+    font-family: title;
+    src: url(../resources/fonts/gothic.woff);
+}
+article {
+  font-family: 'Roboto', sans-serif;
+  padding: 5em 10em 0;
+}
+/**/
+#sendnotification{
+  transition: .3s; /* Animation */
+  -o-transition:.3s;
+  -ms-transition:.3s;
+  -moz-transition:.3s;
+  -webkit-transition:.3s;
+}
+#sendnotification:hover{
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+/**/
+.material-input {
+  height: 100px;
+  overflow-x: hidden;
+  overflow-y: visible;
+  position: relative;
+}
+.material-input input[type="color"], .material-input input[type="date"], .material-input input[type="datetime"], .material-input input[type="datetime-local"], .material-input input[type="email"], .material-input input[type="month"], .material-input input[type="number"], .material-input input[type="password"], .material-input input[type="search"], .material-input input[type="tel"], .material-input input[type="text"], .material-input input[type="time"], .material-input input[type="url"], .material-input input[type="week"], .material-input input:not([type]), .material-input textarea {
+  background-color: transparent;
+  border-color: #00756c;
+  border-style: none none solid;
+  border-width: 0 0 1px;
+  bottom: 0;
+  box-sizing: border-box;
+  color: #fffde7;
+  font-size: 16px;
+  padding: 10px;
+  position: absolute;
+  width: 100%;
+}
+.material-input input[type="color"]:focus, .material-input input[type="date"]:focus, .material-input input[type="datetime"]:focus, .material-input input[type="datetime-local"]:focus, .material-input input[type="email"]:focus, .material-input input[type="month"]:focus, .material-input input[type="number"]:focus, .material-input input[type="password"]:focus, .material-input input[type="search"]:focus, .material-input input[type="tel"]:focus, .material-input input[type="text"]:focus, .material-input input[type="time"]:focus, .material-input input[type="url"]:focus, .material-input input[type="week"]:focus, .material-input input:not([type]):focus, .material-input textarea:focus {
+  outline: 0;
+}
+.material-input input[type="color"]:focus ~ span, .material-input input[type="date"]:focus ~ span, .material-input input[type="datetime"]:focus ~ span, .material-input input[type="datetime-local"]:focus ~ span, .material-input input[type="email"]:focus ~ span, .material-input input[type="month"]:focus ~ span, .material-input input[type="number"]:focus ~ span, .material-input input[type="password"]:focus ~ span, .material-input input[type="search"]:focus ~ span, .material-input input[type="tel"]:focus ~ span, .material-input input[type="text"]:focus ~ span, .material-input input[type="time"]:focus ~ span, .material-input input[type="url"]:focus ~ span, .material-input input[type="week"]:focus ~ span, .material-input input:not([type]):focus ~ span, .material-input textarea:focus ~ span {
+  -webkit-transition: all 0.45s ease;
+  -moz-transition: all 0.45s ease;
+  transition: all 0.45s ease;
+  transform: translateX(0);
+}
+.material-input input[type="color"]:focus ~ label, .material-input input[type="color"]:valid ~ label, .material-input input[type="date"]:focus ~ label, .material-input input[type="date"]:valid ~ label, .material-input input[type="datetime"]:focus ~ label, .material-input input[type="datetime"]:valid ~ label, .material-input input[type="datetime-local"]:focus ~ label, .material-input input[type="datetime-local"]:valid ~ label, .material-input input[type="email"]:focus ~ label, .material-input input[type="email"]:valid ~ label, .material-input input[type="month"]:focus ~ label, .material-input input[type="month"]:valid ~ label, .material-input input[type="number"]:focus ~ label, .material-input input[type="number"]:valid ~ label, .material-input input[type="password"]:focus ~ label, .material-input input[type="password"]:valid ~ label, .material-input input[type="search"]:focus ~ label, .material-input input[type="search"]:valid ~ label, .material-input input[type="tel"]:focus ~ label, .material-input input[type="tel"]:valid ~ label, .material-input input[type="text"]:focus ~ label, .material-input input[type="text"]:valid ~ label, .material-input input[type="time"]:focus ~ label, .material-input input[type="time"]:valid ~ label, .material-input input[type="url"]:focus ~ label, .material-input input[type="url"]:valid ~ label, .material-input input[type="week"]:focus ~ label, .material-input input[type="week"]:valid ~ label, .material-input input:not([type]):focus ~ label, .material-input input:not([type]):valid ~ label, .material-input textarea:focus ~ label, .material-input textarea:valid ~ label {
+  -webkit-transition: all 0.125s ease;
+  -moz-transition: all 0.125s ease;
+  transition: all 0.125s ease;
+  color: #004d40;
+  font-size: .85em;
+  transform: translateY(-100%);
+}
+.material-input input[type="color"]:invalid, .material-input input[type="date"]:invalid, .material-input input[type="datetime"]:invalid, .material-input input[type="datetime-local"]:invalid, .material-input input[type="email"]:invalid, .material-input input[type="month"]:invalid, .material-input input[type="number"]:invalid, .material-input input[type="password"]:invalid, .material-input input[type="search"]:invalid, .material-input input[type="tel"]:invalid, .material-input input[type="text"]:invalid, .material-input input[type="time"]:invalid, .material-input input[type="url"]:invalid, .material-input input[type="week"]:invalid, .material-input input:not([type]):invalid, .material-input textarea:invalid {
+  box-shadow: none;
+}
+.material-input input[type="color"] ~ span, .material-input input[type="date"] ~ span, .material-input input[type="datetime"] ~ span, .material-input input[type="datetime-local"] ~ span, .material-input input[type="email"] ~ span, .material-input input[type="month"] ~ span, .material-input input[type="number"] ~ span, .material-input input[type="password"] ~ span, .material-input input[type="search"] ~ span, .material-input input[type="tel"] ~ span, .material-input input[type="text"] ~ span, .material-input input[type="time"] ~ span, .material-input input[type="url"] ~ span, .material-input input[type="week"] ~ span, .material-input input:not([type]) ~ span, .material-input textarea ~ span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  -webkit-transition: all 0.45s ease;
+  -moz-transition: all 0.45s ease;
+  transition: all 0.45s ease;
+  background: #fffde7;
+  display: block;
+  transform: translateX(-100%);
+}
+.material-input label {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  color: #fffde7;
+  pointer-events: none;
+}
+/*///////////////////////////////////////////////*/
+
+.container{
+  margin: auto;
+}
+
+.material-btn{
+  margin-top: 2em;
+  margin-left: 40%;
+  margin-right: 40%;
+  text-align: center;
+  padding:1em;
+  background:#00756c;
+  border-radius:.3em;
+  color:#63d7cb  ;
+  font-family: title;
+  font-weight:lighter;
+  font-size: 1.7em;
+  cursor:pointer;
+  text-transform:uppercase;
+  box-shadow:0 0 8px rgba(0,0,0,0.3);
+  position:relative;
+  overflow:hidden;
+
+  user-select:none;
+}
+
+.material-btn .ripple{
+
+  border-radius:50%;
+  background:rgba(255,255,255,.5);
+  position:absolute;
+  transform:scale(0);
+  animation:rippleEffect 0.5s linear;
+  font-family: title;
+}
+
+@keyframes rippleEffect{
+  to{
+    transform:scale(2.5);
+    opacity:0;
+  }
+}
+
+body {
+	color: black;
+	font-family: 'Roboto', sans-serif;
+}
+
+tr{
+  font-size: .8em;
+}
+
+table.md {
+	width: 85%;
+	background-color: #fffde7;
+	border-collapse: collapse;
+	border-radius: 2px;
+	box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12);
+}
+
+table.md thead {
+	color: #212121;
+	font-size: 1.2rem;
+}
+table{
+  font-weight: -1000;
+}
+
+table.md thead tr {
+	height: 5.6rem;
+	border-bottom: 1px solid #fffde7;
+}
+
+table.md thead th {
+	text-align: center;
+}
+
+table.md tbody {
+	color: rgba(0, 0, 0, 0.87);
+	font-size: 1.3rem;
+}
+
+table.md tbody tr {
+	height: 4.8rem;
+	border-bottom: 1px solid #fffde7;
+}
+
+table.md tbody tr:hover {
+	background-color: #ffecb3;
+}
+
+table.md tbody tr:last-child {
+	height: 5.6rem;
+	border: none;
+}
+
+table.md td {
+	text-align: center;
+	border-bottom: none;
+}
+
+table.md th, table.md td {
+  padding-left: 4rem;
+	padding-right: 4rem;
+}
+
+
+
+table.md th.checkbox, table.md td.checkbox {
+	padding-left: 1.6rem;
+	padding-right: 1.6rem;
+}
+
+table.md th.checkbox md-checkbox, table.md td.checkbox md-checkbox {
+	height: 1.8rem;
+}
+
+table.md th:last-child, table.md td:last-child {
+	padding-right: 2.4rem;
+}
+
+td:hover{
+  cursor: default;
+}
+
+
+.delete a{
+  color: #f44336;
+  text-decoration: none;
+}
+.delete a:hover{
+  cursor: pointer;
+  color: #b71c1c;
+  text-decoration: underline;
+}
+
+/*LOGOUT BUTTON*/
+#bExit{
+    margin: 20px 20px 0px 0px;
+}
+.ripple {
+  background-position: center;
+  border-radius: 50px;
+  padding-left: 2em;
+  padding-right: 2em;
+  font-family: title;
+  font-weight: bold;
+  transition: .3s; /* Animation */
+  -o-transition:.3s;
+  -ms-transition:.3s;
+  -moz-transition:.3s;
+  -webkit-transition:.3s;
+}
+.ripple:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.ripple:active {
+  background-color: #ffad42;
+  background-size: 100%;
+  transition: background 0s;
+}
+button {
+  border: none;
+  border-radius: 2px;
+  padding: 10px;
+  padding-right:
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 400;
+  cursor: pointer;
+  background-color: #f57c00;
+  outline: none;
+}
+img:hover{
+  content: url("../resources/bell_notify_hover.png");
+}
+/*SNACKBAR*/
+#snackbar {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 30px;
+  font-size: 17px;
+}
+
+#snackbar.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+/**/
+.shadow {
+  background-color: #fffde7;
+  margin: auto;
+  margin-bottom: 50px;
+  padding: 2em;
+  height: 40px;
+  width: 30%;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 2px 9px 1px rgba(0, 0, 0, 0.12), 0 4px 2px -2px rgba(0, 0, 0, 0.2);
+  vertical-align: middle;
+  line-height: 40px;
+}
+
+#updateFares{
+  display: grid;
+  grid-template-columns: 60% 40%;
+}

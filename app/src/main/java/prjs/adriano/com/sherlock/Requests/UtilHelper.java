@@ -28,12 +28,16 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Objects;
+import java.util.TimeZone;
 
 import me.toptas.fancyshowcase.FancyShowCaseView;
 import me.toptas.fancyshowcase.OnViewInflateListener;
@@ -165,6 +169,15 @@ public class UtilHelper {
 
                             sunrise = results.getString("sunrise");
                             sunset = results.getString("sunset");
+
+//                            SimpleDateFormat inputSDF = new SimpleDateFormat("HH:mm:ss a");
+//                            inputSDF.setTimeZone(TimeZone.getTimeZone("UTC"));
+//                            Date dSunrise = inputSDF.parse(sunrise);
+//                            Date dSunset = inputSDF.parse(sunset);
+////
+//                            SimpleDateFormat outputSDF = new SimpleDateFormat("HH:mm:ss a");
+//                            sunrise =  outputSDF.format(dSunrise);
+//                            sunset =  outputSDF.format(dSunset);
 
                             sunrise = Global.from12to24(sunrise);
                             sunset = Global.from12to24(sunset);

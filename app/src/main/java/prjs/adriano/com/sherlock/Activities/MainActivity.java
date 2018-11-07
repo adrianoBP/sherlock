@@ -37,12 +37,10 @@ import prjs.adriano.com.sherlock.tabs.Tab3Utility;
 
 import static prjs.adriano.com.sherlock.tabs.Tab1Trips.updateListViewTrips;
 
-
 //TODO APP: logout from all
 //TODO APP: more testing about saved trips
 //TODO APP: check version (send it and check it) while making http request (either from APP or backend)
 //TODO APP: performance in info
-//TODO APP: TIME (ie sunset, sunrise) get time in location (using API?) / get timezone from latitude longitude
 //TODO APP: FKING FIXING NAVBAR
 //TODO APP: Review "Allow notifications" (version checking)
 //TODO APP: Animation when opening the app not right (fade missing)
@@ -51,6 +49,8 @@ import static prjs.adriano.com.sherlock.tabs.Tab1Trips.updateListViewTrips;
 //TODO WEB: Admin view users/devce per user/last login(add field on db + API call when app starts)
 //TODO WEB: Log number of API calls: new database w/ APIiD + nOfCalls
 
+//Done
+//TODO APP: TIME (ie sunset, sunrise) get time in location (using API?) / get timezone from latitude longitude
 
 public class MainActivity extends AppCompatActivity {
 

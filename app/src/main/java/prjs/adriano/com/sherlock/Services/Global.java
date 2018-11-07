@@ -14,8 +14,12 @@ import android.location.Location;
 import android.location.LocationManager;
 import android.provider.Settings;
 import android.support.v4.app.ActivityCompat;
+import android.text.TextUtils;
 import android.util.Log;
 
+import com.google.android.gms.flags.impl.DataUtils;
+
+import java.sql.Time;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -430,34 +434,27 @@ public class Global extends Application {
 
     public static String from12to24(String input) {
 
-
-        Date date = null;
-
-        DateFormat df = new SimpleDateFormat("hh:mm:ss aa");
-        df.setTimeZone(TimeZone.getTimeZone("UTC"));
-        //Desired format: 24 hour format: Change the pattern as per the need
-        DateFormat outputformat = new SimpleDateFormat("HH:mm");
-        outputformat.setTimeZone(TimeZone.getTimeZone("Europe/Rome"));
-
-        date = null;
-        String output = null;
+        String formattedInput = "";
+        SimpleDateFormat date12Format = new SimpleDateFormat("hh:mm:ss a");
+        SimpleDateFormat date24Format = new SimpleDateFormat("HH:mm");
         try {
-            //Converting the input String to Date
-            date = df.parse(input);
-
-            if (TimeZone.getDefault().inDaylightTime(new Date())) {
-                Calendar cal = Calendar.getInstance(); // creates calendar
-                cal.setTime(date); // sets calendar time/date
-                cal.add(Calendar.HOUR_OF_DAY, 1); // adds one hour
-                date = cal.getTime();
-            }
-            //Changing the format of date and storing it in String
-            output = outputformat.format(date);
-            //Displaying the date
-        } catch (ParseException pe) {
-            pe.printStackTrace();
+           formattedInput = date24Format.format(date12Format.parse(input));
+        } catch (ParseException e) {
+            e.printStackTrace();
         }
 
+        Calendar calendar = Calendar.getInstance();
+        calendar.setTime(new Date());
+        calendar.setTimeZone(TimeZone.getTimeZone("UTC"));
+        calendar.set(Calendar.HOUR_OF_DAY, Integer.parseInt(TextUtils.split(formattedInput, ":")[0]));// for 6 hour
+        calendar.set(Calendar.MINUTE, Integer.parseInt(TextUtils.split(formattedInput, ":")[1]));// for 0 min
+
+        //Desired format: 24 hour format: Change the pattern as per the need
+        DateFormat outputformat = new SimpleDateFormat("HH:mm");
+        outputformat.setTimeZone(TimeZone.getDefault());
+
+        String output = null;
+        output = outputformat.format(calendar.getTime());
 
         return output;
     }

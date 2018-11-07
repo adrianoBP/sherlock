@@ -109,17 +109,17 @@ if((!isset($uid) || trim($uid)==='')){
     $payload = json_encode($fields);
     $ch = curl_init($path_to_fcm);
     $options = array(
-      CURLOPT_RETURNTRANSFER => true,         // Return web page
-      CURLOPT_HEADER         => false,        // Disable headers return
-      CURLOPT_FOLLOWLOCATION => false,        // Follow redirects option
-      // CURLOPT_ENCODING       => "utf-8",     //handle all encodings
-      CURLOPT_AUTOREFERER    => true,         // Set referer on redirect
-      CURLOPT_CONNECTTIMEOUT => 20,           // Timeout time on connect
-      CURLOPT_TIMEOUT        => 20,           // Timeout time on response
-      CURLOPT_POST            => 1,           // Sending POST data flag
-      CURLOPT_POSTFIELDS     => $payload,     // Payload -> variables
-      CURLOPT_SSL_VERIFYHOST => 0,            // Disable ssl verification
-      CURLOPT_SSL_VERIFYPEER => false,
+      CURLOPT_RETURNTRANSFER => true,         // return web page
+      CURLOPT_HEADER         => false,        // don't return headers
+      CURLOPT_FOLLOWLOCATION => false,         // follow redirects
+      // CURLOPT_ENCODING       => "utf-8",           // handle all encodings
+      CURLOPT_AUTOREFERER    => true,         // set referer on redirect
+      CURLOPT_CONNECTTIMEOUT => 20,          // timeout on connect
+      CURLOPT_TIMEOUT        => 20,          // timeout on response
+      CURLOPT_POST            => 1,            // i am sending post data
+      CURLOPT_POSTFIELDS     => $payload,    // this are my post vars
+      CURLOPT_SSL_VERIFYHOST => 0,            // don't verify ssl
+      CURLOPT_SSL_VERIFYPEER => false,        //
       CURLOPT_VERBOSE        => 1,
       CURLOPT_HTTPHEADER     => $headers
     );
@@ -136,5 +136,8 @@ if((!isset($uid) || trim($uid)==='')){
 
 }
 
+
+// echo($data);
+// echo $info;
 mysqli_close($con);
 ?>

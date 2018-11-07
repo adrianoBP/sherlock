@@ -62,7 +62,8 @@ function addReqData(value, index, ar) {
   var res = value['departureTime'].split('-');
   var valDate = value['departureTime'].split(' ')[0];
   var day = res[2].split(' ')[0];
-  var days = ["03", "06", "09", "12", "15", "18", "21", "24", "27", "30"];
+  // var days = ["03", "06", "09", "12", "15", "18", "21", "24", "27", "30"];
+  var days = ["01", "15"];
 
   var today = new Date();
   var dd = today.getDate() + 5;

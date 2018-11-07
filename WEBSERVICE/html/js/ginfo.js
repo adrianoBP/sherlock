@@ -29,7 +29,14 @@ function formattedDate(d) {
 }
 
 function addReqData(value, index, ar){
-  labelsVals.push(formattedDate(new Date(value['departureTime'])));
+  // labelsVals.push(formattedDate(new Date(value['departureTime'])));
+  console.log(value['departureTime']);
+  if(formattedDate(new Date(value['departureTime'])).startsWith("01")){
+    labelsVals.push(formattedDate(new Date(value['departureTime'])));
+  }else{
+    labelsVals.push(" ");
+
+  }
   dataVals.push(value['value']);
 }
 
